@@ -1,0 +1,148 @@
+/* page styles*/
+/** main*/
+html,body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+body { 
+	color:#444; 
+	line-height:1.7; 
+	font-family:Verdana, Arial, Sans-Serif;
+}
+a { 
+	text-decoration:none; 
+	color:#555; 
+	
+	&:visited {
+		text-decoration:none;
+	}
+	
+	&:hover,&:active,&:focus {
+		color:#333; 
+		text-decoration: none;
+	}
+}
+
+.trans-link {
+	display: inline-block;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	
+	&:hover, &:focus, &:active {
+		transform: scale(1.1) rotate(4deg);
+		-webkit-transform: scale(1.1) rotate(4deg);
+	}
+}
+.container {
+	margin:0 auto;
+}
+
+.header,.content,.footer {
+	width:1150px;
+}
+
+.header {
+	border-bottom: 1px solid #eee;
+	height: 90px;
+	line-height: 90px;
+	
+	.logo {
+		margin-left: 20px;
+		font-weight: normal;
+	}
+	
+	.nav {
+		
+		margin-right: 90px;
+		
+		.nav-link {
+			display: inline-block;
+		}
+	}
+}
+
+.content {
+	
+	.main,.side {		
+		margin-bottom: 40px;
+		padding-top:20px;
+	}
+	.main {
+		width: 75%;
+		
+		.post {
+			
+			.post-title {
+				font-weight: normal;
+			}
+			
+			.post-content {
+				font-size: 18px;
+			}
+			
+			.post-meta {
+				font-size:12px;
+				
+				.post-tag {
+					background: #eee;
+					color:#333;
+					border-radius: 5px;
+  					padding: 5px 10px;
+				}
+				
+				.post-time ,.post-view {				
+					font-size:10px;
+					color: #555;
+				}
+				
+				.post-view {
+					
+					var {
+						color: #444;
+					}
+				}
+			}
+		}
+	}
+	
+	.side {
+		width:25%;
+		
+		.category {
+			margin-top:40px;
+			padding-left: 40px;
+			
+			.category-title {
+				font-weight: normal;
+			}
+			
+			.category-list {
+				
+				.category-list-item {
+					font-size: 14px;
+					color: #333;
+					
+					a {
+						display: inline-block;
+						padding: 2px 10px;
+					}
+				}
+			}
+		}
+	}
+}
+.footer {
+	border-top: 1px solid #eee;
+	height: 55px;
+	
+	.copyright {
+		font-size: 12px;
+		text-align: center;
+	}
+}

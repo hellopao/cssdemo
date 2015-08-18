@@ -1,0 +1,245 @@
+/** css reset */
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form {
+  margin: 0; }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: none;
+  vertical-align: top;
+  max-width: 100%; }
+
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+/** common class*/
+/** float */
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/** clear float*/
+.clear {
+  clear: both; }
+
+/* margin */
+.ml_2 {
+  margin-left: 2px; }
+
+.mr_2 {
+  margin-right: 2px; }
+
+.mb_2 {
+  margin-bottom: 2px; }
+
+.mt_2 {
+  margin-top: 2px; }
+
+.ml_5 {
+  margin-left: 5px; }
+
+.mr_5 {
+  margin-right: 5px; }
+
+.mb_5 {
+  margin-bottom: 5px; }
+
+.mt_5 {
+  margin-top: 5px; }
+
+.ml_10 {
+  margin-left: 10px; }
+
+.mr_10 {
+  margin-right: 10px; }
+
+.mb_10 {
+  margin-bottom: 10px; }
+
+.mt_10 {
+  margin-top: 10px; }
+
+.ml_15 {
+  margin-left: 15px; }
+
+.mr_15 {
+  margin-right: 15px; }
+
+.mb_15 {
+  margin-bottom: 15px; }
+
+.mt_15 {
+  margin-top: 15px; }
+
+.ml_20 {
+  margin-left: 20px; }
+
+.mr_20 {
+  margin-right: 20px; }
+
+.mb_20 {
+  margin-bottom: 20px; }
+
+.mt_20 {
+  margin-top: 20px; }
+
+/* padding */
+.pl_2 {
+  padding-left: 2px; }
+
+.pr_2 {
+  padding-right: 2px; }
+
+.pb_2 {
+  padding-bottom: 2px; }
+
+.pt_2 {
+  padding-top: 2px; }
+
+.pl_5 {
+  padding-left: 5px; }
+
+.pr_5 {
+  padding-right: 5px; }
+
+.pb_5 {
+  padding-bottom: 5px; }
+
+.pt_5 {
+  padding-top: 5px; }
+
+.pl_10 {
+  padding-left: 10px; }
+
+.pr_10 {
+  padding-right: 10px; }
+
+.pb_10 {
+  padding-bottom: 10px; }
+
+.pt_10 {
+  padding-top: 10px; }
+
+.pl_15 {
+  padding-left: 15px; }
+
+.pr_15 {
+  padding-right: 15px; }
+
+.pb_15 {
+  padding-bottom: 15px; }
+
+.pt_15 {
+  padding-top: 15px; }
+
+.pl_20 {
+  padding-left: 20px; }
+
+.pr_20 {
+  padding-right: 20px; }
+
+.pb_20 {
+  padding-bottom: 20px; }
+
+.pt_20 {
+  padding-top: 20px; }
+
+/* page styles*/
+/** main*/
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+body {
+  color: #444;
+  line-height: 1.7;
+  font-family: Verdana, Arial, Sans-Serif; }
+
+a {
+  text-decoration: none;
+  color: #555; }
+  a:visited {
+    text-decoration: none; }
+  a:hover, a:active, a:focus {
+    color: #333;
+    text-decoration: none; }
+
+.trans-link {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent; }
+  .trans-link:hover, .trans-link:focus, .trans-link:active {
+    transform: scale(1.1) rotate(4deg);
+    -webkit-transform: scale(1.1) rotate(4deg); }
+
+.container {
+  margin: 0 auto; }
+
+.header, .content, .footer {
+  width: 1150px; }
+
+.header {
+  border-bottom: 1px solid #eee;
+  height: 90px;
+  line-height: 90px; }
+  .header .logo {
+    margin-left: 20px;
+    font-weight: normal; }
+  .header .nav {
+    margin-right: 90px; }
+    .header .nav .nav-link {
+      display: inline-block; }
+
+.content .main, .content .side {
+  margin-bottom: 40px;
+  padding-top: 20px; }
+.content .main {
+  width: 75%; }
+  .content .main .post .post-title {
+    font-weight: normal; }
+  .content .main .post .post-content {
+    font-size: 18px; }
+  .content .main .post .post-meta {
+    font-size: 12px; }
+    .content .main .post .post-meta .post-tag {
+      background: #eee;
+      color: #333;
+      border-radius: 5px;
+      padding: 5px 10px; }
+    .content .main .post .post-meta .post-time, .content .main .post .post-meta .post-view {
+      font-size: 10px;
+      color: #555; }
+    .content .main .post .post-meta .post-view var {
+      color: #444; }
+.content .side {
+  width: 25%; }
+  .content .side .category {
+    margin-top: 40px;
+    padding-left: 40px; }
+    .content .side .category .category-title {
+      font-weight: normal; }
+    .content .side .category .category-list .category-list-item {
+      font-size: 14px;
+      color: #333; }
+      .content .side .category .category-list .category-list-item a {
+        display: inline-block;
+        padding: 2px 10px; }
+
+.footer {
+  border-top: 1px solid #eee;
+  height: 55px; }
+  .footer .copyright {
+    font-size: 12px;
+    text-align: center; }
