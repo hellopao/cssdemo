@@ -1,16 +1,26 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
+var group = require('gulp-group-files');
+
+var sassFiles = {
+    "blog.front" : {
+        src: "./blog/front/styles/sass/index.scss",
+        dest: "./blog/front/styles/"
+    }
+};
 
 gulp.task('sass:compile',function (){
-	return sass('./styles/sass/index.scss')
-        .on('error', function (err) {
-            console.error('Error!', err.message);
-        })
-        .pipe(gulp.dest('./styles/'));
+    return group(sassFiles,function (key,fileset){
+        return sass(fileset.src)
+            .on('error', function (err) {
+                console.error('compile sass file error: %s', err.message);
+            })
+            .pipe(gulp.dest(fileset.dest));
+    })();
 });
 
 gulp.task('sass:watch',function (){
-	gulp.watch('./styles/sass/*.scss',['sass:compile'])
+    gulp.watch('**/*.scss',['sass:compile'])
 });
 
 gulp.task('default',['sass:watch']);

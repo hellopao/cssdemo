@@ -181,8 +181,8 @@ a {
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent; }
   .trans-link:hover, .trans-link:focus, .trans-link:active {
-    transform: scale(1.1) rotate(4deg);
-    -webkit-transform: scale(1.1) rotate(4deg); }
+    transform: scale(1.1) rotate(5deg);
+    -webkit-transform: scale(1.1) rotate(5deg); }
 
 .container {
   margin: 0 auto; }
