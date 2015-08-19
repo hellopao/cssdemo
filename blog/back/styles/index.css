@@ -171,19 +171,6 @@ a {
     color: #333;
     text-decoration: none; }
 
-.trans-link {
-  display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent; }
-  .trans-link:hover, .trans-link:focus, .trans-link:active {
-    transform: scale(1.1) rotate(5deg);
-    -webkit-transform: scale(1.1) rotate(5deg); }
-
 .container {
   margin: 0 auto; }
 
@@ -191,57 +178,7 @@ a {
   width: 1150px; }
 
 .header {
-  border-bottom: 1px solid #eee;
-  height: 90px;
-  line-height: 90px; }
-  .header .logo {
-    margin-left: 20px;
-    font-weight: normal; }
-  .header .nav {
-    margin-right: 90px; }
-    .header .nav .nav-link {
-      display: inline-block; }
-
-.content .main, .content .side {
-  margin-bottom: 40px;
-  padding-top: 20px; }
-
-.content .main {
-  width: 75%; }
-  .content .main .post .post-title {
-    font-weight: normal; }
-  .content .main .post .post-content {
-    font-size: 18px; }
-  .content .main .post .post-meta {
-    font-size: 12px; }
-    .content .main .post .post-meta .post-tag {
-      background: #eee;
-      color: #333;
-      border-radius: 5px;
-      padding: 5px 10px; }
-    .content .main .post .post-meta .post-time, .content .main .post .post-meta .post-view {
-      font-size: 10px;
-      color: #555; }
-    .content .main .post .post-meta .post-view var {
-      color: #444; }
-
-.content .side {
-  width: 25%; }
-  .content .side .category {
-    margin-top: 40px;
-    padding-left: 40px; }
-    .content .side .category .category-title {
-      font-weight: normal; }
-    .content .side .category .category-list .category-list-item {
-      font-size: 14px;
-      color: #333; }
-      .content .side .category .category-list .category-list-item a {
-        display: inline-block;
-        padding: 2px 10px; }
+  height: 60px; }
 
 .footer {
-  border-top: 1px solid #eee;
-  height: 55px; }
-  .footer .copyright {
-    font-size: 12px;
-    text-align: center; }
+  height: 60px; }

@@ -1,20 +1,22 @@
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
 var group = require('gulp-group-files');
 
 var sassFiles = {
     "blog.front" : {
         src: "./blog/front/styles/sass/index.scss",
         dest: "./blog/front/styles/"
+    },
+	"blog.back" : {
+        src: "./blog/back/styles/sass/index.scss",
+        dest: "./blog/back/styles/"
     }
 };
 
 gulp.task('sass:compile',function (){
     return group(sassFiles,function (key,fileset){
-        return sass(fileset.src)
-            .on('error', function (err) {
-                console.error('compile sass file error: %s', err.message);
-            })
+        return gulp.src(fileset.src)
+            .pipe(sass().on('error', sass.logError))
             .pipe(gulp.dest(fileset.dest));
     })();
 });

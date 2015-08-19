@@ -1,0 +1,47 @@
+/* page styles*/
+/** main*/
+$c_black_light : #555;
+$c_black_medium : #444;
+$c_black_dark : #333;
+
+$c_eee: #eee;
+
+html,body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+body { 
+	color: #{$c_black_medium}; 
+	line-height:1.7; 
+	font-family:Verdana, Arial, Sans-Serif;
+}
+a { 
+	text-decoration:none; 
+	color: #{$c_black_medium}; 
+	
+	&:visited {
+		text-decoration:none;
+	}
+	
+	&:hover, &:active, &:focus {
+		color: #{$c_black_dark}; 
+		text-decoration: none;
+	}
+}
+
+.container {
+	margin:0 auto;
+}
+
+.header, .content, .footer {
+	width: 1150px;
+}
+
+.header {
+	height: 60px;
+}
+
+.footer {
+	height: 60px;
+}
