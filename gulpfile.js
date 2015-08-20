@@ -10,6 +10,10 @@ var sassFiles = {
 	"blog.back" : {
         src: "./blog/back/styles/sass/index.scss",
         dest: "./blog/back/styles/"
+    },
+    "marry" : {
+        src: "./marry/styles/sass/index.scss",
+        dest: "./marry/styles/"
     }
 };
 
