@@ -1,0 +1,66 @@
+@import "reset.scss";
+@import "common.scss";
+
+/** main*/
+$c_black_light : #555;
+$c_black_medium : #444;
+$c_black_dark : #333;
+
+$c_eee: #eee;
+
+html,body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+body { 
+	color: #{$c_black_medium}; 
+	line-height:1.7; 
+	font-family:Verdana, Arial, Sans-Serif;
+	background: #{$c_eee};
+}
+
+.main{
+	width:350px;
+	border:1px solid #{$c_eee};
+	border-radius:10px;
+	position: absolute;
+	top:40%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+			
+	.description {
+		text-align: center;
+	}
+		
+	.login-form {
+
+		.username,.password,.submit {
+			width: 100%;
+			margin-top:20px;
+		}
+		
+		.username .text,.password .text, .submit .btn-login {
+			width: 100%;
+			height: 45px;		
+			line-height: 45px;
+			padding:0 15px;
+			font-size: 18px;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+		
+		.username .text,.password .text {
+			outline: none;
+			border:1px solid #{$c_eee};
+		}
+		
+		.submit {
+			
+			.btn-login {
+				background: #00BE9C;
+			}
+		}
+	}
+	
+}

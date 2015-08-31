@@ -7,13 +7,13 @@ var sassFiles = {
         src: "./blog/front/styles/sass/index.scss",
         dest: "./blog/front/styles/"
     },
+    "blog.back.login" : {
+        src: "./blog/back/styles/sass/login.scss",
+        dest: "./blog/back/styles/"
+    },
 	"blog.back" : {
         src: "./blog/back/styles/sass/index.scss",
         dest: "./blog/back/styles/"
-    },
-    "marry" : {
-        src: "./marry/styles/sass/index.scss",
-        dest: "./marry/styles/"
     }
 };
 
